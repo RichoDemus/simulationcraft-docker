@@ -1,0 +1,7 @@
+armory=eu,Silvermoon,Richodemus
+#calculate_scale_factors=1
+html=data/richo_druid.html
+#save=data/richo_imported.simc
+
+iterations=10000
+
