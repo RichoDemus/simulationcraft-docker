@@ -5,3 +5,19 @@ html=data/richo_druid.html
 
 iterations=10000
 
+actions.precombat=/bear_form
+# Snapshot raid buffed stats before combat begins and pre-potting is done.
+actions.precombat+=/snapshot_stats
+
+# Executed every time the actor is available.
+
+actions=auto_attack
+actions+=/ironfur,if=buff.guardian_of_elune.react
+actions+=/ironfur,if=buff.ironfur.down|rage.deficit<25
+actions+=/frenzied_regeneration,if=!ticking
+actions+=/moonfire,if=buff.galactic_guardian.react
+actions+=/mangle
+actions+=/thrash_bear
+actions+=/moonfire,if=!ticking
+actions+=/swipe_bear
+
